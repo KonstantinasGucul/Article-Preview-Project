@@ -1,0 +1,14 @@
+.articlePreviewCard {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 730px;
+  width: 100%;
+  max-height: 280px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px rgba(201, 213, 225, 0.5);
+}

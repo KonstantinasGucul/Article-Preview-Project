@@ -1,7 +1,9 @@
+import ArticlePreviewCard from './components/ArticlePreviewCard/ArticlePreviewCard';
+
 export default function App() {
   return (
     <div>
-      <h1>Article preview component</h1>
+      <ArticlePreviewCard />
     </div>
   );
 }

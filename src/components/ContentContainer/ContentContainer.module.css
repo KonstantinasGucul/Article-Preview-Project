@@ -1,0 +1,113 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  max-width: 365px;
+  width: 100%;
+  max-height: 220px;
+  height: auto;
+  gap: 24px;
+}
+
+.contentContainer h1 {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  color: #48556a;
+}
+
+.contentContainer p {
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  color: #6e8098;
+}
+
+.shareWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.shareWrapper:hover .toolTipWrapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shareButton:hover {
+  background-color: #48556a;
+}
+
+.shareButton:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.toolTipWrapper {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.buttonAuthorContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.profileContainer img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name {
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 700;
+  letter-spacing: 0.12px;
+  color: #48556a;
+}
+
+.date {
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  color: #9daec2;
+}
+
+.shareButton {
+  cursor: pointer;
+  border: none;
+  background-color: #ecf2f8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transform: translateY(-1px);
+}

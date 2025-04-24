@@ -1,0 +1,51 @@
+.combinedToolContainer {
+  /* position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%) translateZ(6px);
+  z-index: 10; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 248px;
+  height: 67px;
+}
+
+.toolContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 18px 36px;
+  background-color: #48556a;
+  border-radius: 10px;
+  width: 248px;
+  height: 55px;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.5);
+}
+
+.pointerContainer {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #48556a;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 20px;
+  gap: 24px;
+}
+
+.shareIcon {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 2.5px;
+  color: #9daec2;
+}
