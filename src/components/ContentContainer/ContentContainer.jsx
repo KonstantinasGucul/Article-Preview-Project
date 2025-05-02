@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import ShareToolTip from '../ShereToolTip/ShareToolTip';
 import styles from './ContentContainer.module.css';
 
 export default function ContentContainer() {
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
+
   return (
     <div className={styles.contentContainer}>
       <h1>
@@ -22,12 +25,13 @@ export default function ContentContainer() {
           </div>
         </div>
         <div className={styles.shareWrapper}>
-          <button className={styles.shareButton}>
+          <button
+            className={styles.shareButton}
+            onClick={() => setIsTooltipOpen((prev) => !prev)}
+          >
             <img src="/images/icon-share.svg" alt="share button" />
           </button>
-          <div className={styles.toolTipWrapper}>
-            <ShareToolTip />
-          </div>
+          {isTooltipOpen && <ShareToolTip />}
         </div>
       </div>
     </div>

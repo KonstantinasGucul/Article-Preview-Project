@@ -1,9 +1,9 @@
 .combinedToolContainer {
-  /* position: absolute;
+  position: absolute;
   bottom: 150%;
   left: 50%;
   transform: translateX(-50%) translateZ(6px);
-  z-index: 10; */
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
